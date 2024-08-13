@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Avinash, a Student from VFSTR.</p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+    </section>
+
+    <section id="about">
+        <center><h2>About Me</h2></center>
+        <div class="about-content">
+           <center> <img src="path-to-your-image.jpg" alt="Avinash" class="profile-img"></center>
+            <p>Brief bio and professional background.</p>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill">
+                    <span>HTML/CSS/JS/ReactJS</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <!-- Add more skills -->
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <center><h2>Portfolio</h2></center>
+        <div class="portfolio-filters">
+            <button class="filter" data-filter="all">All</button>
+            <button class="filter" data-filter="web">Web Development</button>
+            <button class="filter" data-filter="design">Design</button>
+        </div>
+        <div class="portfolio-carousel">
+            <div class="carousel-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Text Summerizaion using NLP Techniques</h3>
+                <p>Automate text summarization with NLP for concise, meaningful summaries.</p>
+                <a href="link-to-project1" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+
+    <section id="blog">
+        <center><h2>Blog</h2></center>
+        <center><div class="blog-posts">
+            <article>
+                <h3><a href="post1.html">Blog Post Title 1</a></h3>
+                <p>Excerpt from the blog post...</p>
+                <a href="post1.html" class="read-more">Read More</a>
+            </article>
+        </div></center>
+    </section>
+
+<center>
+    <section id="contact">
+        <h2>Contact Me</h2><br>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <!-- Add more social media links -->
+        </div>
+        <div class="map">
+            <h3>Find Me Here:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28235.026601751054!2d77.20794213053639!3d28.613895597436957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d166fcd64cf%3A0x4b05295c7ea9d8a6!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1692077984393!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+</center>
+
+    <footer>
+        <p>&copy; 2024 Avinash. All rights reserved.</p>
+    </footer>
+</body>
+</html>
